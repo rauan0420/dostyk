@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+body{
+    background-color: #eff7f6;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar{
+    padding: 15px 18px !important;
+}
+
+.logo{
+    font-weight: 600;
+}
+
+.nav-item{
+    margin: 0px 10px;
+}
+
+.nav-item .nav-link{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    background-color: blue;
+    width: 0%;
+
+    height: 3px;
+    transition: 0.4s ease-in-out;}
+
+.nav-item:hover .nav-link::after{
+    width: 100%;
+}
+.nav-item:hover{
+    color: blue;
+}
+
+.content-home2{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-heading{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100px;
+
+}
+
+.span{
+    color: green;
+}
+
+.img-home{
+    margin-right: 20px;
+    width: 580px;
+}
+
+.about-us-container{
+    width: 100%;
+    height: 80vh;
+}
+
+.about-us{
+    width: 100%;
+    height: 320px;
+    background-color: #f9f9f9;
+    margin-top: 140px;
+    position: relative;
+}
+
+.content-about{
+    padding: 10px 38px;
+}
+
+.heading-about{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    margin: 10px 0px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-about::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: blue;
+    width: 46px;
+    height: 2px;
+}
+
+.p-about{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    line-height: 21px;
+    margin: 25px 0px;
+}
+
+.img-about{
+    height: 420px;
+    position: absolute;
+    top: -36px;
+    right: 150px;
+}
+
+.product-category{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    margin-top: -20vh;
+}
+
+.heading-category{
+    font-size: 34px;
+    color: black;
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.heading-category::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: blue;
+    width: 56px;
+    height: 2px;
+}
+
+.card-product{
+    padding: 14px 10px;
+    height: 700px;
+    background-color: #f9f9f9 !important;
+}
+
+.img-card{
+    height: 100%  !important;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-title{
+    font-size: 14px;
+    color: black;
+    width: 30%;
+    border-bottom: 1px solid blue;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    margin-bottom: 20px !important;
+}
+.card-body {
+    height: 100%; /* Set a consistent height for the card body */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack flex items vertically */
+    justify-content: center; /* Center content vertically */
+  }
+  
+.contacts {
+    padding: 70px 0; /* Adjust padding as needed */
+  }
+  
+  .carousel-teg {
+    text-align: center;
+  }
+  
+  .row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* /* Center items vertically */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contacts__map {
+    padding: 20px;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .contacts_item {
+    align-items: end;
+    flex: 1;
+    padding: 20px; 
+    margin-left: 20vh;
+  }
+  
+  
+  .contacts__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .contacts__text {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .social__item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  .social__item a {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between social icons */
+  }
+  
+  /* Example: style social icons */
+  .fa {
+    font-size: 24px;
+    color: black; /* Example color */
+  }
+  
+  /* Additional styling for anchor links */
+  .contacts__phone,
+  .contacts__phone:hover {
+    color: black; /* Example color */
+    text-decoration: none;
+  }
+  
+  /* Example hover effect for social icons */
+  .social__item a:hover .fa {
+    color: black; /* Example hover color */
+  }
+  
+
+  /* Footer style */
+footer {
+    background-color: #f9f9f9; /* Example background color */
+    padding-top: 75px;
+    padding-bottom: 32px;
+    color: black; /* Example text color */
+  }
+  
+  /* Footer container style */
+  footer .container {
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Footer row style */
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Footer column style */
+  footer .col-sm-6 {
+    width: calc(50% - 30px); /* Adjust column width and spacing */
+    padding-bottom: 50px;
+  }
+  
+  /* Footer column heading style */
+  footer h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  /* Footer text style */
+  footer p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Footer social icons style */
+  footer .p-t-27 a {
+    display: inline-block;
+    margin-right: 16px; /* Adjust spacing between social icons */
+    font-size: 18px;
+    color: #fff; /* Example social icon color */
+  }
+  
+  /* Footer form input style */
+  footer input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #fff; /* Example input border color */
+    background-color: transparent;
+    color: #fff;
+    margin-bottom: 18px;
+  }
+  
+  /* Footer form button style */
+  footer button {
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: #ff5722; /* Example button background color */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  footer button:hover {
+    background-color: #e64a19; /* Example button hover background color */
+  }
+  
+  /* Footer bottom text style */
+  footer .p-t-40 p {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  
